@@ -1,0 +1,35 @@
+classical:
+x(q): not gate
+cx(q1, q2): conditional not - set q2 to 0 when q1 is 1 [entangles]
+ccx(q1, q2, q3): toffoli gate - sets q3 to 0 when q1 and q2 [entangles]
+swap(q1, q2) - switches states
+id(q): identity gate - is a pass
+
+modifiers:
+t(q) - rotate π/4 in rz
+s(q) - rotate π/2 in rz
+z(q) - rotate π in rz, multiplies state by -1, acts as not for +/-, does not affect 0 could
+
+tdg(q): t-dagger gate - inverse of t(q)
+sdg(q): s-dagger gate - inverse of s(q)
+
+p(ø, q): phase gate - applies e^øi on 1 state, rotates ø
+rz(ø, q) - not sure how different from p
+
+reset(q) - set to 0
+measure(q) - get value [collapses superposition]
+c(operation): control modifier - modifies operation to only happen when value is 1
+if(classical bit) - conditional operation based on normal bit
+barrier(q) - prevents some kind of optimization (unsure what exactly)
+
+quantum gates:
+h(q) - puts a bit into superposition
+sx(q): square-root NOT gate -
+sxdg: square-root NOT-dagger gate -
+y(q) - rotate π in ry
+rx(ø, q) - rotate ø around x-axis
+ry(ø, q) - rotate ø around y-axis
+rxx(ø, q1, q2) -
+rzz(ø, q1, q2) -
+u(theta, phi, lam, q) - sets q to specific position
+

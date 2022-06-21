@@ -1,0 +1,5 @@
+monte carlo
+unsupervised learning
+gradient descent
+
+alu & ints
